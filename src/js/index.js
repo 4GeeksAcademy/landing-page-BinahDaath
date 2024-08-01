@@ -9,5 +9,5 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 import {Card} from "./component/card.jsx";
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Card/>);
+ReactDOM.createRoot(document.getElementById('app')).render(<Card title="test" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sapiente tempore facere quam consectetur repudiandae accusamus velit nulla nam, maxime quidem quia odio blanditiis, consequatur dolor molestiae pariatur beatae sequi."/>);
 

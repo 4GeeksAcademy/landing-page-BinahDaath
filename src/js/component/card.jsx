@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 
-export function Card()
+export function Card({title,text})
 {
     return (
-        <div className="flex flex-col"  style={{"width": "300px"}}>
+        <div className="flex flex-col justify-center"  style={{"width": "300px"}}>
             <img src="https://placehold.co/500x325" className="w-full"/>
-            <div className="middiv flex flex-col justify-items-center">
-            <div className="title m-0">title</div>
-            <div className="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sapiente tempore facere quam consectetur repudiandae accusamus velit nulla nam, maxime quidem quia odio blanditiis, consequatur dolor molestiae pariatur beatae sequi.</div>
+            <div className="middiv flex flex-col gap-y-5">
+            <div className="title mx-auto">{title}</div>
+            <div className="text mx-auto">{text}</div>
             </div>
-            <div className="footdiv"><button>button</button></div>
+            <div className="footdiv w-full flex flex-row justify-center"><button className="mx-auto bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-2">button</button></div>
         </div>
         );
 }
