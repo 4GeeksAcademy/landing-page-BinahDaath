@@ -11,5 +11,6 @@ import {Card} from "./component/card.jsx";
 import {Header} from "./component/header.jsx";
 import {Footer} from "./component/footer.jsx";
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<div><Header/><Card title="test" text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sapiente tempore facere quam consectetur repudiandae accusamus velit nulla nam, maxime quidem quia odio blanditiis, consequatur dolor molestiae pariatur beatae sequi."/><Footer/></div>);
+let t="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa sapiente tempore facere quam consectetur repudiandae accusamus velit nulla nam, maxime quidem quia odio blanditiis, consequatur dolor molestiae pariatur beatae sequi."
+ReactDOM.createRoot(document.getElementById('app')).render(<div><Header/><Card title="test" text={t}/><Footer/></div>);
 
